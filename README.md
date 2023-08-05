@@ -1,26 +1,31 @@
+# Stellar Classification
 
-Sugestões do que deve conter o notebook do Trabalho Prático:
+&nbsp;
 
-- [x] Qual o problema geral a ser resolvido
-- [x] Quais são os datasets originais
-    - [x] Volume de dados em tuplas e espaço de armazenamento
-- [x] Análise exploratória dos dados
-    - [x] correlações
-    - [x] análise de atributos
-    - [x] histogramas
-- [x] Qual o tipo de problema de machine learning a resolver:
-    - [x] Classificação, Regressão, Clusterização, Aprendizado por reforço (Reinforcement Learning), Recuperação de Informação, Recomendação, etc.
-- [x] Quais features (input) e label (output) serão usados
-- [X] Quais métricas de avaliação de resultado serão usadas
-- [x] Aplicação das técnicas de machine learning usando diferentes algoritmos e hiper-parâmetros (usar pelo menos 3 técnicas vistas na disciplina e uma extra).
-- [x] Exibição dos resultados preferencialmente de forma gráfica e/ou tabular
-- [x] Apresentar conclusões sobre o trabalho:
-    - [x] Dificuldades, Aprendizados, Possíveis melhorias futuras
+<div align="center">
+    <img alt="Via Láctea acima do Observatório La Palma" src="https://apod.nasa.gov/apod/image/2307/MwLaPalma_Rosadzinski_960_annotated.jpg"/>
+</div>
 
-- Importante
-    - [x] usar bastante markdown para criar títulos e explicações a cada passo dos experimentos
-    - [x] evitar linhas desnecessárias que não ajudem no entendimento do trabalho
-       - Exemplo: ao mostrar um dataframe, exibir apenas algumas poucas linhas
-    - [x] Recomenda-se comparar com outras resoluções (kernels) ou artigos que resolvem problemas parecidos.
-        - [x] tentar obter resultados mais próximos ou melhores do que eles.
-        - [x] aproveitar e usar as boas ideias que eles possam fornecer.
+Crédito da imagem e direitos autorais: [Marcin Rosadziński](https://www.instagram.com/krakow_astrophotography/)  
+Veja também em [nasa.gov](https://apod.nasa.gov/apod/ap230718.html)
+
+&nbsp;
+
+## Colaboradores
+
+- [Francisco Breno](https://github.com/FrBreno)
+- [David Alves](https://github.com/dev-david-alves)
+
+## Objetivo do trabalho
+
+O objetivo deste trabalho é comparar os resultados das métricas de avaliação de diferentes modelos de aprendizagem, utilizando técnicas para o tratamento de dados e a melhoria no processo de treinamento.
+
+## Descrição do problema
+
+Na astronomia, o esquema de classificação de galáxias, quasares e estrelas é um dos mais fundamentais. O dataset [Stellar Classification Dataset - SDSS17](https://www.kaggle.com/datasets/fedesoriano/stellar-classification-dataset-sdss17) contém dados espectrais de diferentes corpos estelares visando classificar estrelas, galáxias e quasares com base nessas características.
+
+### Conjunto de Dados
+
+Esse dataset consiste em 100.000 observações (linhas) do espaço feitas pelo SDSS (Sloan Digital Sky Survey), onde cada observação é descrita por 17 colunas (colunas) de recursos e 1 coluna (label) de classe que a identifica as observações como uma estrela, galáxia ou quasar.
+
+É importante observar que o nosso problema envolve aprendizado supervisionado, mais especificamente, um problema de classificação. Com isso, o resultado que buscamos alcançar é a classificação em uma das três categorias (estrela, galáxia ou quasar) com base nos dados analisados.
